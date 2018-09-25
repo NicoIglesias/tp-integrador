@@ -1,0 +1,30 @@
+body {
+  background-color: #E1CEBC;
+}
+
+.logo {
+  width: 250px;
+  margin: auto;
+}
+
+.main-logo {
+	width: 80%;
+  text-align: center;
+  margin-left: 30px;
+
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  margin: 50px 40px;
+}
