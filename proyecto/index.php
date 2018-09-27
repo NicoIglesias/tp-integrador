@@ -10,18 +10,26 @@
     <!-- Header -->
     <header class="main-header">
       <div class="logo">
-        <img src="images/logomin2.png" alt="logo Algo Nuevo Algo Viejo" class="main-logo">
+        <img src="images/logo60s.png" alt="logo Algo Nuevo Algo Viejo" class="main-logo">
 
       </div>
 
 
       <nav class="main-nav">
-        <a href="#">Novias</a>
-        <a href="#">Quinceaneras</a>
-        <div class="logo"</div>
-        <a href="#">Fiesta</a>
-        <a href="#">Madrinas</a>
+        <ul class="left">
+          <li><a href="#">Novias</a></li>
+          <li><a href="#">Quinceaneras</a></li>
+          </ul>
+
+          <ul class="right">
+            <li><a href="#">Fiestas</a></li>
+            <li><a href="#">Madrinas</a></li>
+
+          </ul>
       </nav>
+
+
+      <!--Aca esta el login y la barra de busqueda y estaria el carrito-->
       <nav class="interactive-nav">
         <a href="#">Log in</a>
         <a href="registro.php">Registrate</a>
