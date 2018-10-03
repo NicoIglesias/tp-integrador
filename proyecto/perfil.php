@@ -103,12 +103,14 @@
       font-size: 20px;
     }
 
+
+
     }
   </style>
   <body>
-
+    <a href="index.php"> <img src="images/outline-home-24px.svg" style="width:50px"> </a>
     <div class="container">
-      <a href="index.php">Inicio</a>
+
 
 
   <main>
