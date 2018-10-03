@@ -1,6 +1,37 @@
 <?php
 
   $tituloRegistro = "Registrese";
+  if ($_POST) {
+
+    $_POST['nombre_usuario'] = trim($_POST['nombre_usuario']);
+    $_POST['contraseña'] = trim($_POST['contraseña']);
+    $_POST['email'] = trim($_POST['email']);
+
+    //validacion del nombre de usuario
+    if ($_POST['nombre_usuario'] == "") {
+       $errores['nombre_usuario'] = "Debe completar el nombre de usuario";
+    }elseif (strlen($_POST['nombre_usuario']) < 4){
+       $errores['nombre_usuario'] = "El usuario debe tener al menos 4 caracteres";
+    }
+
+    //validacion de email
+    if ($_POST['email'] == "") {
+      $errores['email'] = "Debe completar el email";
+    }
+
+    //validacion contraseña
+    if ($_POST['contraseña'] == "") {
+      $errores['contraseña'] = "Debe completar la contraseña";
+    }elseif (strlen($_POST['contraseña']) < 6){
+      $errores['contraseña'] = "La contraseña debe tener al menos 6 caracteres";
+    }
+
+
+
+
+
+
+  }
 
 
  ?>
@@ -80,24 +111,30 @@
 	   position:relative;
 	   top:1px;
     }
+    .error{
+      color: red;
+      font-size: 10px;
+    }
   </style>
   <body>
-
-    <form class="form" action="index.html" method="post">
+    <form class="form" action="registro.php" method="post">
       <h1><?php echo $tituloRegistro ?></h1> <br>
       Nombre completo: <br>
       <input type="text" name="nombre completo" placeholder="Ingrese nombre completo"> <br>
       Nombre de Usuario: <br>
-      <input type="text" name="Username" placeholder="Ingrese nombre de usuario"> <br>
+      <span class="error"><?php echo $errores['nombre_usuario']??''; ?></span> <br>
+      <input type="text" name="Username" placeholder="Ingrese nombre de usuario">
       Correo electronico: <br>
-      <input type="email" name="email" placeholder="Ingrese email"> <br>
+      <span class="error"><?php echo $errores['email']??''; ?></span> <br>
+      <input type="email" name="email" placeholder="Ingrese email"><br>
       Contraseña: <br>
+      <span class="error"><?php echo $errores['contraseña']??''; ?></span> <br>
       <input type="password" name="contraseña" placeholder="Contraseña"> <br>
       Repita contraseña: <br>
       <input type="password" name="contraseña" placeholder="Repita contraseña"> <br>
       Imagen de perfil: <br>
       <input type="file" name="" value=""> <br><br>
-      <input class="myButton" type="submit" name="button" value="ENVIAR">
+      <button type="submit">registrarse</button>
     </form>
   </body>
 </html>

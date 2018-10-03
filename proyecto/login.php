@@ -85,7 +85,7 @@
       <h1>Bienvenido/a</h1> <br><br>
       Usuario <br> <input type="text" name="usuario" placeholder="Ingrese usuario"> <br>
       Contraseña  <br> <input type="password" name="" placeholder="Ingrese contraseña"> <br>
-      <input class="myButton" type="button" name="" value="Login"> <br> <br>
+      <a href="perfil.php"><input class="myButton" type="button" name="" value="Login"> <br> <br></a>
       <a href="registro.php">¿No tienes cuenta? <br> <input class="myButton" type="button" name="" value="Crear"></a>
     </form>
   </body>
