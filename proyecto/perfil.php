@@ -96,9 +96,20 @@
     .img{
       padding: 95px;
     }
+    a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    }
   </style>
   <body>
+
     <div class="container">
+      <a href="index.php">Inicio</a>
+
 
   <main>
     <div class="row">
@@ -106,8 +117,18 @@
         <div class="foto-left">
           <img class="foto" src="images/149071.png"/>
         </div>
-        <h4 class="nombre">Pancita Feliz</h4>
-        <p class="descripcion">Hola! me llamo pancita feliz y me gustan los caramelos con los chocolates y las gomitas</p>
+        <h4 class="nombre">Juana Rodriguez</h4>
+        <h6><img src="images/location2.png" alt="location pin" style="width:30px">CABA, Buenos Aires</h6>
+        <p class="descripcion">Hola! Hago envios de lunes a jueves</p>
+        <div class="valoracion">
+          <img src="images/star3.png" alt="estrellas" style="width:30px">
+          <img src="images/star3.png" alt="estrellas" style="width:30px">
+          <img src="images/star3.png" alt="estrellas" style="width:30px">
+          <img src="images/star3.png" alt="estrellas" style="width:30px">
+          <img src="images/empty-star.png" alt="" style="width:30px">
+
+
+        </div>
 
       </div>
       <div class="right col-lg-8">
