@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title></title>
+    <title>Login</title>
   </head>
   <style>
     body{
