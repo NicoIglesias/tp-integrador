@@ -12,7 +12,7 @@
   </head>
   <style>
     body{
-      background-color: #FCE9E9;
+      background-color: #F8EEBC;
       text-align: center;
     }
     form {
@@ -82,6 +82,7 @@
   <body>
 
     <form class="form">
+      <img src="images/logo60s.png" style="width:180px">
       <h1>Bienvenido/a</h1> <br><br>
       Usuario <br> <input type="text" name="usuario" placeholder="Ingrese usuario"> <br>
       Contraseña  <br> <input type="password" name="" placeholder="Ingrese contraseña"> <br>

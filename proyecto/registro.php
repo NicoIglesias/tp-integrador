@@ -46,7 +46,7 @@
   </head>
   <style media="screen">
     body{
-      background-color: #BCDCE4;
+      background-color: #F8EEBC;
       text-align: center;
     }
     form {
@@ -117,7 +117,9 @@
     }
   </style>
   <body>
+
     <form class="form" action="registro.php" method="post">
+      <img src="images/logo60s.png" style="width:180px">
       <h1><?php echo $tituloRegistro ?></h1> <br>
       Nombre completo: <br>
       <input type="text" name="nombre completo" placeholder="Ingrese nombre completo"> <br>
