@@ -82,7 +82,7 @@
   <body>
 
     <form class="form">
-      <img src="images/logo60s.png" style="width:180px">
+      <a href="index.php"><img src="images/logo60s.png" style="width:180px"></a>
       <h1>Bienvenido/a</h1> <br><br>
       Usuario <br> <input type="text" name="usuario" placeholder="Ingrese usuario"> <br>
       Contraseña  <br> <input type="password" name="" placeholder="Ingrese contraseña"> <br>

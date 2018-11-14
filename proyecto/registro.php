@@ -119,7 +119,7 @@
   <body>
 
     <form class="form" action="registro.php" method="post">
-      <img src="images/logo60s.png" style="width:180px">
+      <a href="index.php"><img src="images/logo60s.png" style="width:180px"></a>
       <h1><?php echo $tituloRegistro ?></h1> <br>
       Nombre completo: <br>
       <input type="text" name="nombre completo" placeholder="Ingrese nombre completo"> <br>
