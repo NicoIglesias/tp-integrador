@@ -7,6 +7,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
@@ -43,39 +44,75 @@
         <input type="image" src="images/cart-icon.png" class="cart-iconHeader" style=width:30px; height="30px">
         <a href="login.php">Log in</a>
         <a href="registro.php">Registrate</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/hamburger.png" class="hamburguesa"></a>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="images/banner-friends-cut2.jpg" alt="" class="banner-friends">
+    </div>
+
+    <div class="catalogo-container">
+      <div class="box">
+        <img src="images/kids-partydress.jpg" alt="">
+        <h4>Vestido de fiesta para nena</h4>
+        <br>
+        <h4>$400</h4>
+      </div>
+      <div class="box">
+        <img src="images/party-dress.jpg" alt="">
+        <h4>Vestido de fiesta, talle 1</h4>
+        <br>
+        <h4>$1200</h4>
+        </div>
+      <div class="box">
+        <img src="images/party-dress2.jpg" alt="">
+        <h4>Vestido de fiesta, talle 3</h4>
+        <br>
+        <h4>$900</h4>
+        </div>
+      <div class="box">
+        <img src="images/party-dress3.jpg" alt="">
+        <h4>Vestido de fiesta, talle 3</h4>
+        <br>
+        <h4>$1000</h4>
+        </div>
+      <div class="box">
+        <img src="images/wedding-dress1.jpg" alt="">
+        <h4>Vestido de novia, talle 2</h4>
+        <br>
+        <h4>$2300</h4>
+
+      </div>
       </div>
 
+    </div>
+    <div class="footer">
+      <a href="faq.php">Preguntas frecuentes</a>
+      <a href="sobre-nosotros.php">Sobre nosotros</a>
+    </div>
 
-    </div>
-    <div class="content">
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    </div>
 
 
       <script>
       window.onscroll = function() {myFunction()};
 
       var header = document.getElementById("elHeaderDos");
-      var headeruno = document.getElementById("myHeader");
       var sticky = header.offsetTop;
       var div= ("#elHeaderDos");
 
       function myFunction() {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
-          header.style.visibility="visible";
+          header.style.display="flex";
         } else {
           header.classList.remove("sticky");
-          header.style.visibility="hidden";
+          header.style.display="none";
         }
       }
+
+
       </script>
 
 

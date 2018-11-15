@@ -1,4 +1,4 @@
-<?php  ?>
+<?php require_once('navbar.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -108,7 +108,6 @@
     }
   </style>
   <body>
-    <a href="index.php"> <img src="images/outline-home-24px.svg" style="width:50px"> </a>
     <div class="container">
 
 

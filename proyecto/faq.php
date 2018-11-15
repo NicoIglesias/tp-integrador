@@ -1,3 +1,4 @@
+<?php require_once('navbar.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
  <head>
@@ -7,6 +8,8 @@
    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
  </head>
  <body>
+
+
    <h1>PREGUNTAS FRECUENTES</h1>
         <div class="container dF fwW">
             <div class="box">
