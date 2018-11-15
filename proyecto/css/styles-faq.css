@@ -3,7 +3,7 @@
 }
 
 body {
- background-color: #DCC4DC;
+ background-color: #ffeecc;
     font-family: monospace;
     margin: 0;
 }
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     text-align: center;
-    background-color: #ff884d;
+    background-color: #ffe6b3;
     padding: 15px;
     font-family: 'Josefin Sans', sans-serif;
 
@@ -29,7 +29,7 @@ h2 {
     max-width: 900px;
     margin: auto;
     border: solid 5px ;
-    background-color: #C0E4FB;
+    background-color: #ffffb3;
 
 }
 
@@ -38,7 +38,7 @@ h2 {
     margin: 1.14%;
     background-color:rgb(255, 204, 153);
     padding: 15px;
-    border: solid 1px #f2f2f2;
+    border: solid 1px #f4f4f4;
     text-align: center;
 
 }

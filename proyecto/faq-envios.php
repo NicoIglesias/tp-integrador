@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>ENVIOS</title>
+    <link rel="stylesheet" href="css/style-comocomprar.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
   <body>
     <h1>Envios</h1>
