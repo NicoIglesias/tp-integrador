@@ -111,6 +111,14 @@
           header.style.display="none";
         }
       }
+      function myFunction2() {
+          var x = document.getElementById("elHeaderDos");
+          if (x.className === "headerDos") {
+              x.className += " responsive";
+          } else {
+              x.className = "headerDos";
+          }
+      }
 
 
       </script>

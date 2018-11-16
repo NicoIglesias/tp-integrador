@@ -9,113 +9,109 @@
      rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
-  <style>
-  body {
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  .headerDos {
-    background: #F5CEB1;
-    color: black;
-    display: flex;
-    justify-content:space-around;
-    flex: 1;
-    height: 90px;
-    overflow: hidden;
-  }
-  .headerDos a:hover{
-    background-color: #FCECF0;
-    text-decoration: none;
-  }
-  .headerDos .icon {
-    display: none;
-  }
-  .active {
-    color: white;
-  }
-
-
-  .headerDos a{
-    text-decoration: none;
-    font-size: 23px;
-    display: block;
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-  }
-
-  .headerLeft{
-    justify-content: flex-start;
-    align-items: center;
-    flex: 1;
-    display: flex;
-  }
-
-  .headerRight{
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-    flex: 1;
-  }
-
-  .headerRight a{
-    font-size: 17px;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .content {
-    padding-top: 102px;
-  }
-  .search-icon {
-    width: 27px;
-  	height: 37px;
-    padding-top: 10px;
-  }
-
-  .cart-icon {
-    width: 27px;
-    height: 37px;
-    padding-top: 10px;
-  }
-  .searchSpot{
-    width: 300px;
-    height: 35px;
-  }
-  @media screen and (max-width: 1137px) {
-    .headerDos a:not(:first-child) {display: none;}
-    .headerDos a.icon {
-      float: right;
-      display: block;
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
     }
-  }
+    .headerDos {
+      background: #F5CEB1;
+      color: black;
+      display: flex;
+      justify-content:space-around;
+      flex: 1;
+      height: 90px;
+      overflow: hidden;
+    }
+    .headerDos a:hover{
+      background-color: #FCECF0;
+      text-decoration: none;
+    }
+    .headerDos .icon {
+      display: none;
+    }
+    .active {
+      color: white;
+    }
 
-  @media screen and (max-width: 1137px) {
-    .headerDos.responsive {position: relative;}
-    .headerDos.responsive .icon {
-      position: absolute;
-      right: 0;
+
+    .headerDos a{
+      text-decoration: none;
+      font-size: 23px;
+      display: block;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    .headerLeft{
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      display: flex;
+    }
+
+    .headerRight{
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+      flex: 1;
+    }
+
+    .headerRight a{
+      font-size: 17px;
+    }
+    .sticky {
+      position: fixed;
       top: 0;
+      width: 100%;
     }
-    .headerDos.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+
+    .sticky + .content {
+      padding-top: 102px;
     }
-  }
-  .hamburguesa{
-    width: 50px;
-    padding-top: 10px;
-  }
+    .search-icon {
+      width: 27px;
+    	height: 37px;
+      padding-top: 10px;
+    }
 
+    .cart-icon {
+      width: 27px;
+      height: 37px;
+      padding-top: 10px;
+    }
+    .searchSpot{
+      width: 300px;
+      height: 35px;
+    }
+    @media screen and (max-width: 1137px) {
+      .headerDos a:not(:first-child) {display: none;}
+      .headerDos a.icon {
+        float: right;
+        display: block;
+      }
+    }
 
-
-  </style>
+    @media screen and (max-width: 1137px) {
+      .headerDos.responsive {position: relative;}
+      .headerDos.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .headerDos.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    .hamburguesa{
+      width: 50px;
+      padding-top: 10px;
+    }
+    </style>
   <body>
     <div class="headerDos" id="elHeaderDos">
       <div class="headerLeft">
@@ -141,6 +137,7 @@
     var headeruno = document.getElementById("myHeader");
     var sticky = header.offsetTop;
     var div= ("#elHeaderDos");
+    var x = document.getElementById("elHeaderDos");
 
     function myFunction() {
       if (window.pageYOffset > sticky) {
@@ -148,6 +145,14 @@
       } else {
         header.classList.remove("sticky");
       }
+    }
+    function myFunction() {
+        var x = document.getElementById("elHeaderDos");
+        if (x.className === "headerDos") {
+            x.className += " responsive";
+        } else {
+            x.className = "headerDos";
+        }
     }
     </script>
   </body>
