@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>¿CÓMO COMPRAR?</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="css/style-comocomprar.css">
+>>>>>>> be7e08e22c2564a09ee4b981b978142cc1b3fd81
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
   <style>
@@ -12,6 +16,7 @@
   }
   </style>
   <body>
+    
     <h1>¿Como comprar?</h1>
     <h3>¿Cómo puedo comprar en Algonuevoalgoviejo.com?</h3>
     <h4>Podés entrar en Algonuevoalgoviejo.com y elegir la categoría de vestido que estes buscando. Cuando encuentres algo que te gusta hacé click en el botón “COMPRAR”.
