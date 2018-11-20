@@ -1,46 +1,29 @@
 <?php
 
+ include_once("soporte.php");
+ require_once("clases/usuario.php");
+
+  if ($auth->estaLogueado()) {
+		header("Location:index.php");exit;
+	}
+
   $tituloRegistro = "Registrese";
+
+  $errores = [];
+
   if ($_POST) {
+    $errores = $validador-> validarRegistro($_POST, $db);
 
-    $_POST['nombre_usuario'] = trim($_POST['nombre_usuario']);
-    $_POST['contraseña'] = trim($_POST['contraseña']);
-    $_POST['confirmarContra'] = trim($_POST['confirmarContra']);
-    $_POST['email'] = trim($_POST['email']);
+    if (count($errores) == 0) {
+  	  $usuario = new Usuario($_POST["email"], $_POST["nombre_usuario"], $_POST["nombre_completo"], $_POST["contrasena"]);
 
-    //validacion del nombre de usuario
-    if ($_POST['nombre_usuario'] == "") {
-       $errores['nombre_usuario'] = "Debe completar el nombre de usuario";
-    }elseif (strlen($_POST['nombre_usuario']) < 4){
-       $errores['nombre_usuario'] = "El usuario debe tener al menos 4 caracteres";
+      $usuario = $db->guardarUsuario($usuario);
     }
-
-    //validacion de email
-    if ($_POST['email'] == "") {
-      $errores['email'] = "Debe completar el email";
-    }
-
-    //validacion contraseña
-    if ($_POST['contraseña'] == "") {
-      $errores['contraseña'] = "Debe completar la contraseña";
-    }elseif (strlen($_POST['contraseña']) < 6){
-      $errores['contraseña'] = "La contraseña debe tener al menos 6 caracteres";
-    }
-
-    // confirmacion de contraseña
-
-    if ($_POST['confirmarContra'] !== $_POST['contraseña'] ) {
-      $errores['confirmarContra'] = "Las contraseñas no coinciden";
-    }
-
-
-
-
-
   }
 
 
- ?>
+
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -87,22 +70,23 @@
   <body>
 
     <form class="form" action="registro.php" method="post">
-      <a href="index.php"><img src="images/logo60s.png" style="width:180px"></a>
+      <img src="images/logo60s.png" style="width:180px">
       <h1><?php echo $tituloRegistro ?></h1> <br>
       Nombre completo: <br>
-      <input type="text" name="nombre completo" placeholder="Ingrese nombre completo"> <br>
+      <span class="error"><?php echo $errores['nombre_completo']??''; ?></span> <br>
+      <input type="text" name="nombre_completo" placeholder="Ingrese nombre completo" id="nombre_completo"> <br>
       Nombre de Usuario: <br>
       <span class="error"><?php echo $errores['nombre_usuario']??''; ?></span> <br>
-      <input type="text" name="nombre_usuario" placeholder="Ingrese nombre de usuario">
+      <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingrese nombre de usuario">
       Correo electronico: <br>
       <span class="error"><?php echo $errores['email']??''; ?></span> <br>
-      <input type="email" name="email" placeholder="Ingrese email"><br>
+      <input type="email" id="email"name="email" placeholder="Ingrese email"><br>
       Contraseña: <br>
       <span class="error"><?php echo $errores['contraseña']??''; ?></span> <br>
-      <input type="password" name="contraseña" placeholder="Contraseña"> <br>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña"> <br>
       Repita contraseña: <br>
       <span class="error"><?php echo $errores['confirmarContra']??''; ?></span> <br>
-      <input type="password" name="confirmarContra" placeholder="Repita su contraseña"> <br>
+      <input type="password" id="confirmarContra"name="confirmarContra" placeholder="Repita su contraseña"> <br>
       Imagen de perfil: <br><br>
       <input type="file" name="" value=""> <br><br>
       <input class="btn btn-primary btn btn-outline-success" type="submit" name="submit" value="Registrese">

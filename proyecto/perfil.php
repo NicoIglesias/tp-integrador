@@ -1,4 +1,14 @@
-<?php require_once('navbar.php') ?>
+<!--<//?php
+ include_once("soporte.php");
+
+  $mailABuscar = $_GET["mail"];
+
+  $usuario = $db->traerPorMail($mailABuscar);
+
+  if ($usuario == null) {
+    header("Location:index.php");exit;
+  }
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,7 +26,7 @@
 
     .container {
       max-width: 1250px;
-      margin-top: 2%;
+      margin-top: 100px;
       padding: 0;
       width: 90%;
       background-color: #FCE9E9;
@@ -108,17 +118,15 @@
     }
   </style>
   <body>
+    <a href="index.php"> <img src="images/outline-home-24px.svg" style="width:50px"> </a>
     <div class="container">
-
-
-
-  <main>
+   <main>
     <div class="row">
       <div class="left col-lg-4">
         <div class="foto-left">
           <img class="foto" src="images/149071.png"/>
         </div>
-        <h4 class="nombre">Juana Rodriguez</h4>
+        <h4 class="nombre">Juana Rodriguez <//?=$usuario->getNombreDeUsuario()?></h4>
         <h6><img src="images/location2.png" alt="location pin" style="width:30px">CABA, Buenos Aires</h6>
         <p class="descripcion">Hola! Hago envios de lunes a jueves</p>
         <div class="valoracion">
@@ -160,4 +168,19 @@
 </div>
 
   </body>
-</html>
+</html> -->
+<?php
+  include("soporte.php");
+  if (!$auth->estaLogueado()) {
+    header("Location:index.php");exit;
+  }
+
+  $usuarioLogueado = $auth->usuarioLogueado($db);
+
+  $nombre = $usuarioLogueado->getNombreDeUsuario();
+
+?>
+<?php include("header.php"); ?>
+
+<h1>Inicio</h1>
+<h2>Bienvenido <?=$nombre?> a tu perfil</h2>

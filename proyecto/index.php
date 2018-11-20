@@ -1,3 +1,10 @@
+<?php
+include("soporte.php");
+
+
+
+  
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,123 +12,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algo Nuevo, Algo Viejo</title>
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
-    <div class="top-container">
-      <nav class="interactive-nav">
-       <input type="image" src="images/search-icon.png" class="search-icon">
-       <input type="text" placeholder="Buscar un producto o marca">
-       <input type="image" src="images/cart-icon.png" class="cart-icon">
-       <a href="login.php">Log in</a>
-       <a href="registro.php">Registrate</a>
+    <!-- Header -->
+    <!--Aca esta el login y la barra de busqueda y estaria el carrito-->
+    <nav class="interactive-nav">
+     <a href="login.php">Log in</a>
+     <a href="registro.php">Registrate</a>
+     <input type="text" placeholder="Buscar un producto">
+     <input type="image" src="images/search-icon.png" class="search-icon">
+    </nav>
+
+    <header class="main-header">
+      <img src="images/logo60s.png" alt="logo" class="main-logo">
+
+      <nav class="main-nav">
+        <ul class="left">
+          <li><a href="#">Novias</a></li>
+          <li><a href="#">Quinceaneras</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="#">Fiestas</a></li>
+          <li><a href="#">Madrinas</a></li>
+        </ul>
       </nav>
-      <a href="index.php"><img src="images/logo60s.png" alt="logo" class="main-logo" style="width: 300px"></a>
+    </header>
+
+    <div class="banner-container">
+      <img src="images/banner-friends-cut2.jpg" alt="banner" class="banner">
+
     </div>
 
-    <div class="header" id="myHeader">
-      <a href="#">Novias</a>
-      <a href="#">Quinceaneras</a>
-      <a href="#">Fiestas</a>
-      <a href="#">Madrinas</a>
-    </div>
+    <div class="menu-container">
+      <div class="box">
+        <img src="images/party-dress.jpg" alt="vestido de fiesta rosa">
+        <h3>Vestido de fiesta, talle 1</h3>
+        <br>
+        <h3>$1200</h3>
 
-
-    <div class="headerDos" id="elHeaderDos">
-      <div class="headerLeft">
-        <a href="index.php"><input type="image" src="images/logo60s.png" class="logoEnHeader" style="width:100px"; height="75px"></a>
-        <a href="#">Novias</a>
-        <a href="#">Quinceaneras</a>
-        <a href="#">Fiestas</a>
-        <a href="#">Madrinas</a>
       </div>
-      <div class="headerRight">
-        <input type="image" src="images/search-icon.png" class="search-iconHeader" style="width:30px"; height="30px">
-        <input type="text" placeholder="Buscar un producto o marca" class="searchSpot">
-        <input type="image" src="images/cart-icon.png" class="cart-iconHeader" style=width:30px; height="30px">
-        <a href="login.php">Log in</a>
-        <a href="registro.php">Registrate</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="images/hamburger.png" class="hamburguesa"></a>
+      <div class="box">
+        <img src="images/party-dress2.jpg" alt="vestido de fiesta rosa">
+        <h3>Vestido de fiesta, talle 3</h3>
+        <br>
+        <h3>$900</h3>
+
+      </div>
+      <div class="box">
+        <img src="images/wedding-dress1.jpg" alt="vestido de novia">
+        <h3>Vestido de novia, talle 3</h3>
+        <br>
+        <h3>$2300</h3>
+
       </div>
     </div>
 
-    <div class="banner">
-      <img src="images/banner-friends-cut2.jpg" alt="" class="banner-friends">
-    </div>
+    <div class="menu-container2">
 
-    <div class="catalogo-container">
       <div class="box">
-        <img src="images/kids-partydress.jpg" alt="">
-        <h4>Vestido de fiesta para nena</h4>
+        <img src="images/party-dress3.jpg" alt="vestido de fiesta rosa">
+        <h3>Vestido de fiesta, talle 0</h3>
         <br>
-        <h4>$400</h4>
-      </div>
-      <div class="box">
-        <img src="images/party-dress.jpg" alt="">
-        <h4>Vestido de fiesta, talle 1</h4>
-        <br>
-        <h4>$1200</h4>
-        </div>
-      <div class="box">
-        <img src="images/party-dress2.jpg" alt="">
-        <h4>Vestido de fiesta, talle 3</h4>
-        <br>
-        <h4>$900</h4>
-        </div>
-      <div class="box">
-        <img src="images/party-dress3.jpg" alt="">
-        <h4>Vestido de fiesta, talle 3</h4>
-        <br>
-        <h4>$1000</h4>
-        </div>
-      <div class="box">
-        <img src="images/wedding-dress1.jpg" alt="">
-        <h4>Vestido de novia, talle 2</h4>
-        <br>
-        <h4>$2300</h4>
+        <h3>$1000</h3>
 
       </div>
+      <div class="box">
+        <img src="images/kids-partydress.jpg" alt="vestido de fiesta para nena">
+        <h3>Vestido de fiesta para nena</h3>
+        <br>
+        <h3>$400</h3>
+
       </div>
 
     </div>
-    <div class="footer">
-      <a href="faq.php">Preguntas frecuentes</a>
-      <a href="sobre-nosotros.php">Sobre nosotros</a>
-    </div>
+
+      <div class="footer">
+        <a href="faq.php">Preguntas frecuentes</a>
+        <a href="sobre-nosotros.php">Sobre nosotros</a>
+      </div>
 
 
 
-      <script>
-      window.onscroll = function() {myFunction()};
 
-      var header = document.getElementById("elHeaderDos");
-      var sticky = header.offsetTop;
-      var div= ("#elHeaderDos");
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-          header.style.display="flex";
-        } else {
-          header.classList.remove("sticky");
-          header.style.display="none";
-        }
-      }
-      function myFunction2() {
-          var x = document.getElementById("elHeaderDos");
-          if (x.className === "headerDos") {
-              x.className += " responsive";
-          } else {
-              x.className = "headerDos";
-          }
-      }
-
-
-      </script>
 
 
   </body>

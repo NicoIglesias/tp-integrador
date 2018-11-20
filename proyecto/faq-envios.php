@@ -1,20 +1,9 @@
-<?php require_once('navbar.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>ENVIOS</title>
-<<<<<<< HEAD
-=======
-    <link rel="stylesheet" href="css/style-comocomprar.css">
->>>>>>> be7e08e22c2564a09ee4b981b978142cc1b3fd81
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
-  <style>
-  body {
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  </style>
   <body>
     <h1>Envios</h1>
     <h2>Aquí podrás encontrar toda la información que necesites para despachar las prendas (vendedora) y para recibir tus pedidos (compradora).</h2>
