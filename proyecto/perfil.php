@@ -170,6 +170,7 @@
   </body>
 </html> -->
 <?php
+  require_once('navbar.php');
   include("soporte.php");
   if (!$auth->estaLogueado()) {
     header("Location:index.php");exit;
